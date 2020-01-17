@@ -1,7 +1,7 @@
 #include <OpenGL/gl3.h>
 
-#include "GLFWWindow.hpp"
-#include "GLShader.hpp"
+#include "Core/GL/GLFWWindow.hpp"
+#include "Core/GL/GLShader.hpp"
 
 int main(int argc, char** argv){
 

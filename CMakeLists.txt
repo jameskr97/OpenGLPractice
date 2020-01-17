@@ -4,6 +4,7 @@ project(OpenGLPractice VERSION 1.0.0 LANGUAGES C CXX)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(OpenGLPractice)
+target_include_directories(OpenGLPractice PRIVATE src)
 add_subdirectory(src)
 add_subdirectory(libs)
 

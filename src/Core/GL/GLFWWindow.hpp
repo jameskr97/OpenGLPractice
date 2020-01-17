@@ -1,7 +1,7 @@
 #ifndef OPENGLPRACTICE_GLFWWINDOW_HPP
 #define OPENGLPRACTICE_GLFWWINDOW_HPP
 
-#include "ICoreWindow.hpp"
+#include "Core/Interface/ICoreWindow.hpp"
 #include <GLFW/glfw3.h>
 
 namespace ETT::Core {

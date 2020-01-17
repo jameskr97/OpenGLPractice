@@ -1,7 +1,9 @@
 list(APPEND SRC
-        ICoreWindow.hpp
         main.cxx
-        GLFWWindow.hpp GLFWWindow.cpp
-        GLShader.hpp GLShader.cpp)
+        Core/GL/GLFWWindow.cpp
+        Core/GL/GLFWWindow.hpp
+        Core/GL/GLShader.cpp
+        Core/GL/GLShader.hpp
+        Core/Interface/ICoreWindow.hpp)
 
 target_sources(OpenGLPractice PUBLIC ${SRC})
