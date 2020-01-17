@@ -1,7 +1,3 @@
-//
-// Created by James on 1/16/20.
-//
-
 #ifndef OPENGLPRACTICE_GLFWWINDOW_HPP
 #define OPENGLPRACTICE_GLFWWINDOW_HPP
 
@@ -11,7 +7,7 @@
 namespace ETT::Core {
 class GLFWWindow : public ETT::Core::ICoreWindow {
 public:
-    void init(int width, int height, std::string title) override;
+    GLFWWindow(int width, int height, const std::string& title);
     void update() override;
     void clear() override;
     void destroy() override;

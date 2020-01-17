@@ -1,12 +1,9 @@
-//
-// Created by James on 1/16/20.
-//
-
+#include <OpenGL/gl3.h>
 #include "GLFWWindow.hpp"
 
 using namespace ETT::Core;
 
-void GLFWWindow::init(int width, int height, std::string title){
+GLFWWindow::GLFWWindow(const int width, const int height, const std::string& title){
     glfwInit();
 
     #ifdef __APPLE__
@@ -30,8 +27,8 @@ void GLFWWindow::update(){
 }
 
 void GLFWWindow::clear(){
-    glClearColor(0.0,0.0,0.0,1.0);
-    glClear(GL_COLOR_BUFFER_BIT);
+    static const GLfloat color[] = {0.0f, 0.0f, 0.0f, 1.0f};
+    glClearBufferfv(GL_COLOR, 0, color);
 }
 
 void GLFWWindow::destroy(){
