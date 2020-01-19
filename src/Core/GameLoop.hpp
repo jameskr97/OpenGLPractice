@@ -3,9 +3,19 @@
 
 #include <chrono>
 
+/**
+ * Articles used to help write this game loop
+ *  - https://gafferongames.com/post/fix_your_timestep/
+ *  - https://dewitters.com/dewitters-gameloop/
+ *  - http://www.fabiensanglard.net/timer_and_framerate/index.php
+ */
+
 namespace ETT::Core {
 
 class GameLoop {
+public:
+    void run();
+
 private:
     // Constants
     std::chrono::nanoseconds timestep{16}; // FPS CONSTANT
@@ -14,7 +24,6 @@ private:
     std::chrono::duration<double, std::nano> updateTime{0};
 
     bool isRunning{false};
-    void run();
 
 protected:
     virtual void init() = 0;
