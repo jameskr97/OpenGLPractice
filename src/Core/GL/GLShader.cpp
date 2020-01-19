@@ -44,6 +44,11 @@ void GLShader::init(const std::string& shader_path) {
     glDeleteShader(fShaderID);
 }
 
+void GLShader::destroy() {
+    glUseProgram(0);
+    glDeleteProgram(this->shaderProgramID);
+}
+
 void GLShader::activate() {
     glUseProgram(this->shaderProgramID);
 }

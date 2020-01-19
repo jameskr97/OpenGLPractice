@@ -12,6 +12,7 @@ void NanoGame::init() {
 }
 
 void NanoGame::shutdown() {
+    shader.destroy();
     window.destroy();
 }
 
