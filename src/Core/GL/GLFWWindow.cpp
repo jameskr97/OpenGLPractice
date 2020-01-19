@@ -26,8 +26,8 @@ void GLFWWindow::update(){
     glfwPollEvents();
 }
 
-void GLFWWindow::clear(){
-    static const GLfloat color[] = {0.0f, 0.0f, 0.0f, 1.0f};
+void GLFWWindow::clear(float r, float g, float b, float a){
+    static const GLfloat color[] = {r, g, b, a};
     glClearBufferfv(GL_COLOR, 0, color);
 }
 
