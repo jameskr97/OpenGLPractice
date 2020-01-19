@@ -19,7 +19,7 @@ void NanoGame::update(double delta) {
     i += 0.01;
 
     if(window.wasCloseButtonClicked()){
-        this->shutdown();
+        this->stop();
     }
 }
 

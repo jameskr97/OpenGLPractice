@@ -15,7 +15,8 @@ namespace ETT::Core {
 
 class GameLoop {
 public:
-    void run();
+    void start();
+    void stop();
     double getFPS();
 
 private:

@@ -3,7 +3,7 @@
 
 using namespace ETT::Core;
 
-void GameLoop::run() {
+void GameLoop::start() {
     this->init();
     this->isRunning = true;
 
@@ -38,6 +38,12 @@ void GameLoop::run() {
     }
     this->shutdown();
 }
+
+void GameLoop::stop() {
+    this->isRunning = false;
+    this->shutdown();
+}
+
 
 double GameLoop::getFPS() {
     return fps;
