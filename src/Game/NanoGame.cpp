@@ -27,11 +27,15 @@ void NanoGame::update(double delta) {
 void NanoGame::render() {
     window.clear();
     shader.activate();
+
     GLfloat attrib[] = { (float)sin(i) * 0.5f, (float)cos(i) * 0.5f, 0.0f, 0.0f };
     glVertexAttrib4fv(0, attrib);
+
     GLfloat color[] = {i,i,i,1.0f};
     glVertexAttrib4fv(1, color);
+    
     glDrawArrays(GL_TRIANGLES, 0, 3);
+
     window.update();
 }
 
