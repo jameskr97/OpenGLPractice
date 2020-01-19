@@ -4,7 +4,7 @@
 #include <string>
 
 /**
- * Methods which must be implemented by OpenGL window/context backend in order to show a window.
+ * Methods which must be implemented by render window/context backend in order to show a window.
  */
 namespace ETT::Core {
 class ICoreWindow {
