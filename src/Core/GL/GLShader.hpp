@@ -7,7 +7,7 @@
 namespace ETT::Core {
 class GLShader {
 public:
-    explicit GLShader(const std::string& shader_path = nullptr);
+    void init(const std::string& shader_path = nullptr);
     void activate();
 
 private:

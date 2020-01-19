@@ -14,7 +14,7 @@ using namespace ETT::Core;
  *
  * @param shader_name The path to the vertex/fragment shader file without extension
  */
-GLShader::GLShader(const std::string& shader_path) {
+void GLShader::init(const std::string& shader_path) {
     // TODO: Check of .vert or .frag exist before loading.
     std::string vShaderSource = GLShader::loadFile(shader_path + ".vert");
     std::string fShaderSource = GLShader::loadFile(shader_path + ".frag");
