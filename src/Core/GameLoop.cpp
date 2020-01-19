@@ -20,7 +20,7 @@ void GameLoop::run() {
         // As long as we have the time (in timestep [aka updates per second) increments, keep updating.
         // This allows us to update at a constant timestep, which letting the render function run as fast as it would like to.
         if(updateTime >= timestep){
-            this->update((double)timestep.count() / std::chrono::nanoseconds::period::den);
+            this->update((double)timestep.count() / std::chrono::milliseconds::period::den);
             updateTime -= timestep; // decrement by timestep
         }
 

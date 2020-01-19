@@ -18,7 +18,7 @@ public:
 
 private:
     // Constants
-    std::chrono::nanoseconds timestep{16}; // FPS CONSTANT
+    std::chrono::milliseconds timestep{16}; // FPS CONSTANT
 
     // Variables
     std::chrono::duration<double, std::nano> updateTime{0};
@@ -27,9 +27,9 @@ private:
 
 protected:
     virtual void init() = 0;
-    virtual void shutdown() = 0;
     virtual void update(double delta) = 0;
     virtual void render() = 0;
+    virtual void shutdown() = 0;
 };
 
 }
