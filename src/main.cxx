@@ -5,7 +5,9 @@
 
 int main(int argc, char** argv){
 
-    ETT::Core::GLFWWindow window{854, 480,  "OpenGLPractice"};
+    ETT::Core::GLFWWindow window;
+    window.init(854, 480,  "OpenGLPractice");
+
     ETT::Core::GLShader shader{"../Data/test"};
 
     GLuint vertex_array_object;

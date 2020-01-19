@@ -10,6 +10,7 @@ namespace ETT::Core {
 class ICoreWindow {
 public:
     ICoreWindow() = default;
+    virtual void init(int width, int height, const std::string& title) = 0;
     virtual void update() = 0;
     virtual void clear() = 0;
     virtual void destroy() = 0;

@@ -7,7 +7,7 @@
 namespace ETT::Core {
 class GLFWWindow : public ETT::Core::ICoreWindow {
 public:
-    GLFWWindow(int width, int height, const std::string& title);
+    void init(int width, int height, const std::string& title);
     void update() override;
     void clear() override;
     void destroy() override;

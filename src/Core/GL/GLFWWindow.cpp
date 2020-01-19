@@ -3,7 +3,7 @@
 
 using namespace ETT::Core;
 
-GLFWWindow::GLFWWindow(const int width, const int height, const std::string& title){
+void GLFWWindow::init(const int width, const int height, const std::string& title){
     glfwInit();
 
     #ifdef __APPLE__
