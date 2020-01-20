@@ -1,4 +1,4 @@
-#version 400 core
+#version 410 core
 
 in VS_OUT {
     vec4 vs_color;
@@ -7,5 +7,5 @@ in VS_OUT {
 out vec4 color;
 
 void main(void){
-    color = vs_in.vs_color; // vec4(0.06, 0.11, 0.42, 1.0);
+    color = vec4(1.0, 1.0, 1.0, 1.0);
 }

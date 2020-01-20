@@ -31,10 +31,10 @@ void NanoGame::render() {
     GLfloat attrib[] = { (float)sin(i) * 0.5f, (float)cos(i) * 0.5f, 0.0f, 0.0f };
     glVertexAttrib4fv(0, attrib);
 
-    GLfloat color[] = {i,i,i,1.0f};
+    GLfloat color[] = {1.0f,1.0f,1.0f,1.0f};
     glVertexAttrib4fv(1, color);
-    
-    glDrawArrays(GL_TRIANGLES, 0, 3);
+
+    glDrawArrays(GL_PATCHES, 0, 3);
 
     window.update();
 }
