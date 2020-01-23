@@ -36,7 +36,7 @@ void NanoGame::render() {
     GLfloat color[] = {1.0f,1.0f,1.0f,1.0f};
     glVertexAttrib4fv(1, color);
 
-    glDrawArrays(GL_PATCHES, 0, 3);
+    glDrawArrays(GL_TRIANGLES, 0, 3);
 
     window.update();
 }
