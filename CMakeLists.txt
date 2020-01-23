@@ -8,9 +8,7 @@ target_include_directories(OpenGLPractice PRIVATE src)
 add_subdirectory(src)
 add_subdirectory(libs)
 
-find_package(OpenGL REQUIRED)
-target_link_libraries(OpenGLPractice ${OPENGL_LIBRARIES})
-
+target_link_libraries(OpenGLPractice glad)
 target_link_libraries(OpenGLPractice glfw)
 target_link_libraries(OpenGLPractice glm::glm)
 target_link_libraries(OpenGLPractice ${LIBRARY_OPENGL})
