@@ -1,4 +1,5 @@
 #include <glad/glad.h>
+
 #include "GLFWWindow.hpp"
 
 using namespace ETT::Core;

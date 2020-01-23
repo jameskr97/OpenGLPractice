@@ -1,4 +1,5 @@
 #include <iostream>
+
 #include "GameLoop.hpp"
 
 using namespace ETT::Core;

@@ -1,6 +1,8 @@
-#include "NanoGame.hpp"
 #include <cmath>
 #include <glad/glad.h>
+
+#include "NanoGame.hpp"
+
 
 void NanoGame::init() {
     window.init(854, 480,  "OpenGLPractice");

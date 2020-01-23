@@ -1,9 +1,10 @@
 #ifndef OPENGLPRACTICE_GLFWWINDOW_HPP
 #define OPENGLPRACTICE_GLFWWINDOW_HPP
 
-#include "Core/Interface/ICoreWindow.hpp"
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+
+#include "Core/Interface/ICoreWindow.hpp"
 
 namespace ETT::Core {
 class GLFWWindow : public ETT::Core::ICoreWindow {
