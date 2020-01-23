@@ -1,4 +1,4 @@
-#include <OpenGL/gl3.h>
+#include <glad/glad.h>
 #include "GLFWWindow.hpp"
 
 using namespace ETT::Core;
@@ -19,6 +19,8 @@ void GLFWWindow::init(const int width, const int height, const std::string& titl
     glfwMakeContextCurrent(window);
     glfwSetWindowSizeLimits(window, 720, 405, GLFW_DONT_CARE, GLFW_DONT_CARE);
     glfwSetWindowAspectRatio(window, 16, 9);
+
+    gladLoadGL();
 }
 
 void GLFWWindow::update(){

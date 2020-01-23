@@ -2,11 +2,12 @@
 // Created by James on 1/16/20.
 //
 
-#include "GLShader.hpp"
 #include <fstream>
 #include <iostream>
 #include <filesystem>
-#include <OpenGL/gl3.h>
+#include <glad/glad.h>
+
+#include "GLShader.hpp"
 
 using namespace ETT::Core;
 

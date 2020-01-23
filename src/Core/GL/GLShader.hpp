@@ -2,7 +2,6 @@
 #define OPENGLPRACTICE_GLSHADER_HPP
 
 #include <string>
-#include <GLFW/glfw3.h>
 
 namespace ETT::Core {
 class GLShader {

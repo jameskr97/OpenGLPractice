@@ -2,6 +2,7 @@
 #define OPENGLPRACTICE_GLFWWINDOW_HPP
 
 #include "Core/Interface/ICoreWindow.hpp"
+#include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
 namespace ETT::Core {
