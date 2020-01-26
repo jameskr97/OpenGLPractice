@@ -1,5 +1,5 @@
-#ifndef OPENGLPRACTICE_GLFWWINDOW_HPP
-#define OPENGLPRACTICE_GLFWWINDOW_HPP
+#ifndef OPENGLPRACTICE_WINDOW_HPP
+#define OPENGLPRACTICE_WINDOW_HPP
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
@@ -7,7 +7,7 @@
 #include "Core/Interface/ICoreWindow.hpp"
 
 namespace Engine::Core {
-class GLFWWindow : public Engine::Core::ICoreWindow {
+class Window : public Engine::Core::ICoreWindow {
 public:
     void init(int width, int height, const std::string& title) override;
     void update() override;
@@ -22,4 +22,4 @@ private:
 
 
 
-#endif //OPENGLPRACTICE_GLFWWINDOW_HPP
+#endif //OPENGLPRACTICE_WINDOW_HPP

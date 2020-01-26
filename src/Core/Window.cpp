@@ -1,10 +1,10 @@
 #include <glad/glad.h>
 
-#include "GLFWWindow.hpp"
+#include "Window.hpp"
 
 using namespace Engine::Core;
 
-void GLFWWindow::init(const int width, const int height, const std::string& title){
+void Window::init(const int width, const int height, const std::string& title){
     glfwInit();
 
     #ifdef __APPLE__
@@ -24,20 +24,20 @@ void GLFWWindow::init(const int width, const int height, const std::string& titl
     gladLoadGL();
 }
 
-void GLFWWindow::update(){
+void Window::update(){
     glfwSwapBuffers(this->window);
     glfwPollEvents();
 }
 
-void GLFWWindow::clear(float r, float g, float b, float a){
+void Window::clear(float r, float g, float b, float a){
     static const GLfloat color[] = {r, g, b, a};
     glClearBufferfv(GL_COLOR, 0, color);
 }
 
-void GLFWWindow::destroy(){
+void Window::destroy(){
     glfwTerminate();
 }
 
-bool GLFWWindow::wasCloseButtonClicked(){
+bool Window::wasCloseButtonClicked(){
     return glfwWindowShouldClose(this->window);
 }

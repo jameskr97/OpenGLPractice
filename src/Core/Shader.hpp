@@ -1,10 +1,10 @@
-#ifndef OPENGLPRACTICE_GLSHADER_HPP
-#define OPENGLPRACTICE_GLSHADER_HPP
+#ifndef OPENGLPRACTICE_SHADER_HPP
+#define OPENGLPRACTICE_SHADER_HPP
 
 #include <string>
 
 namespace Engine::Core {
-class GLShader {
+class Shader {
 public:
     void init(const std::string& shader_path = nullptr);
     void destroy();
@@ -16,4 +16,4 @@ private:
 };
 }
 
-#endif //OPENGLPRACTICE_GLSHADER_HPP
+#endif //OPENGLPRACTICE_SHADER_HPP

@@ -2,14 +2,14 @@
 #define OPENGLPRACTICE_NANOGAME_HPP
 
 #include "Core/GameLoop.hpp"
-#include "Core/GLFWWindow.hpp"
-#include "Core/GLShader.hpp"
+#include "Core/Window.hpp"
+#include "Core/Shader.hpp"
 
 class NanoGame : public Engine::Core::GameLoop {
 private:
     // Engine Elements
-    Engine::Core::GLFWWindow window;
-    Engine::Core::GLShader shader;
+    Engine::Core::Window window;
+    Engine::Core::Shader shader;
 
     // Game Loop Methods
     void init() override;

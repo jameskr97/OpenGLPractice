@@ -1,9 +1,9 @@
 list(APPEND SRC
         main.cxx
-        Core/GL/GLFWWindow.cpp
-        Core/GL/GLFWWindow.hpp
-        Core/GL/GLShader.cpp
-        Core/GL/GLShader.hpp
+        Core/Window.cpp
+        Core/Window.hpp
+        Core/Shader.cpp
+        Core/Shader.hpp
         Core/Interface/ICoreWindow.hpp
         Core/GameLoop.cpp
         Core/GameLoop.hpp

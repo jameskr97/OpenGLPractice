@@ -3,7 +3,7 @@
 #include <filesystem>
 #include <glad/glad.h>
 
-#include "GLShader.hpp"
+#include "Shader.hpp"
 
 using namespace Engine::Core;
 
@@ -18,10 +18,10 @@ using namespace Engine::Core;
  *
  * @param shader_name The path to the vertex/fragment shader file without extension
  */
-void GLShader::init(const std::string& shader_path) {
+void Shader::init(const std::string& shader_path) {
     // TODO: Check of .vert or .frag exist before loading.
-    std::string vertShaderSource = GLShader::loadFile(shader_path + ".vert");
-    std::string fragShaderSource = GLShader::loadFile(shader_path + ".frag");
+    std::string vertShaderSource = Shader::loadFile(shader_path + ".vert");
+    std::string fragShaderSource = Shader::loadFile(shader_path + ".frag");
 
     const auto *source = (const GLchar *)vertShaderSource.c_str(); // Middleman for std::string to GLchar
 
@@ -48,16 +48,16 @@ void GLShader::init(const std::string& shader_path) {
     glDeleteShader(fShaderID);
 }
 
-void GLShader::destroy() {
+void Shader::destroy() {
     glUseProgram(0);
     glDeleteProgram(this->shaderProgramID);
 }
 
-void GLShader::activate() {
+void Shader::activate() {
     glUseProgram(this->shaderProgramID);
 }
 
-std::string GLShader::loadFile(std::string file) {
+std::string Shader::loadFile(std::string file) {
     std::ifstream inputFile{file};
     std::string res, line;
 
