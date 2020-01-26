@@ -6,7 +6,7 @@
 /**
  * Methods which must be implemented by render window/context backend in order to show a window.
  */
-namespace ETT::Core {
+namespace Engine::Core {
 class ICoreWindow {
 public:
     ICoreWindow() = default;

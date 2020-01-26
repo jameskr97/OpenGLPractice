@@ -2,7 +2,7 @@
 
 #include "GameLoop.hpp"
 
-using namespace ETT::Core;
+using namespace Engine::Core;
 
 void GameLoop::start() {
     this->init();

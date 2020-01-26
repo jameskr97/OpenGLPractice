@@ -5,7 +5,7 @@
 
 #include "GLShader.hpp"
 
-using namespace ETT::Core;
+using namespace Engine::Core;
 
 /**
  * GLShader will assume there are vertex and fragment shaders in the given path.

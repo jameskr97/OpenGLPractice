@@ -11,7 +11,7 @@
  */
 
 
-namespace ETT::Core {
+namespace Engine::Core {
 
 class GameLoop {
 public:

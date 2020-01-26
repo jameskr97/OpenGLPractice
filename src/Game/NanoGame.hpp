@@ -5,11 +5,11 @@
 #include "Core/GLFWWindow.hpp"
 #include "Core/GLShader.hpp"
 
-class NanoGame : public ETT::Core::GameLoop {
+class NanoGame : public Engine::Core::GameLoop {
 private:
     // Engine Elements
-    ETT::Core::GLFWWindow window;
-    ETT::Core::GLShader shader;
+    Engine::Core::GLFWWindow window;
+    Engine::Core::GLShader shader;
 
     // Game Loop Methods
     void init() override;

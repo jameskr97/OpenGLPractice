@@ -3,7 +3,7 @@
 
 #include <string>
 
-namespace ETT::Core {
+namespace Engine::Core {
 class GLShader {
 public:
     void init(const std::string& shader_path = nullptr);

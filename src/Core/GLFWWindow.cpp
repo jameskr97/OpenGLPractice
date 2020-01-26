@@ -2,7 +2,7 @@
 
 #include "GLFWWindow.hpp"
 
-using namespace ETT::Core;
+using namespace Engine::Core;
 
 void GLFWWindow::init(const int width, const int height, const std::string& title){
     glfwInit();
