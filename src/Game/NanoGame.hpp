@@ -11,8 +11,6 @@ private:
     ETT::Core::GLFWWindow window;
     ETT::Core::GLShader shader;
 
-    float i{0};
-
     // Game Loop Methods
     void init() override;
     void update(double delta) override;

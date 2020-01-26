@@ -19,7 +19,6 @@ void NanoGame::shutdown() {
 }
 
 void NanoGame::update(double delta) {
-    i += 0.01;
 
     if(window.wasCloseButtonClicked()){
         this->stop();
@@ -29,12 +28,6 @@ void NanoGame::update(double delta) {
 void NanoGame::render() {
     window.clear();
     shader.activate();
-
-    GLfloat attrib[] = { (float)sin(i) * 0.5f, (float)cos(i) * 0.5f, 0.0f, 0.0f };
-    glVertexAttrib4fv(0, attrib);
-
-    GLfloat color[] = {1.0f,1.0f,1.0f,1.0f};
-    glVertexAttrib4fv(1, color);
 
     glDrawArrays(GL_TRIANGLES, 0, 3);
 
