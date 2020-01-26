@@ -2,8 +2,8 @@
 #define OPENGLPRACTICE_NANOGAME_HPP
 
 #include "Core/GameLoop.hpp"
-#include "Core/GL/GLFWWindow.hpp"
-#include "Core/GL/GLShader.hpp"
+#include "Core/GLFWWindow.hpp"
+#include "Core/GLShader.hpp"
 
 class NanoGame : public ETT::Core::GameLoop {
 private:
