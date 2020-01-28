@@ -32,6 +32,7 @@ void Window::update(){
 void Window::clear(float r, float g, float b, float a){
     static const GLfloat color[] = {r, g, b, a};
     glClearBufferfv(GL_COLOR, 0, color);
+    glClear(GL_DEPTH_BUFFER_BIT);
 }
 
 void Window::destroy(){

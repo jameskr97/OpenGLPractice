@@ -10,9 +10,9 @@ public:
     void destroy();
     void activate();
 
+    int shaderProgramID{0}; // TODO: DO NOT KEEP THIS HERE, JUST FOR CURRENT EXAMPLE/TESTING
 private:
     static std::string loadFile(std::string file); // TODO: FACTOR OUT TO REUSABLE FILE LOADER
-    int shaderProgramID{0};
 };
 }
 
