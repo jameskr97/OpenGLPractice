@@ -41,3 +41,16 @@ void Window::destroy(){
 bool Window::wasCloseButtonClicked(){
     return glfwWindowShouldClose(this->window);
 }
+
+
+int Window::getWidth() {
+    int width;
+    glfwGetWindowSize(this->window, &width, nullptr);
+    return width;
+}
+
+int Window::getHeight() {
+    int height;
+    glfwGetWindowSize(this->window, nullptr, &height);
+    return height;
+}

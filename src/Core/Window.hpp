@@ -15,6 +15,10 @@ public:
     void destroy() override;
 
     bool wasCloseButtonClicked() override;
+
+    int getWidth();
+    int getHeight();
+
 private:
     GLFWwindow *window{nullptr};
 };
