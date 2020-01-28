@@ -19,6 +19,7 @@ void NanoGame::shutdown() {
 }
 
 void NanoGame::update(double delta) {
+    window.update();
 
     if(window.wasCloseButtonClicked()){
         this->stop();
@@ -30,8 +31,6 @@ void NanoGame::render() {
     shader.activate();
 
     glDrawArrays(GL_TRIANGLES, 0, 3);
-
-    window.update();
 }
 
 
