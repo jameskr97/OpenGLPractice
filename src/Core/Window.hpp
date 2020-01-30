@@ -1,20 +1,20 @@
 #ifndef OPENGLPRACTICE_WINDOW_HPP
 #define OPENGLPRACTICE_WINDOW_HPP
 
+#include <string>
+
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
-#include "Core/Interface/ICoreWindow.hpp"
-
 namespace Engine::Core {
-class Window : public Engine::Core::ICoreWindow {
+class Window {
 public:
-    void init(int width, int height, const std::string& title) override;
-    void update() override;
-    void clear(float r = 0.0f, float g = 0.0f, float b = 0.0f, float a = 1.0f) override;
-    void destroy() override;
+    void init(int width, int height, const std::string& title);
+    void update();
+    void clear(float r = 0.0f, float g = 0.0f, float b = 0.0f, float a = 1.0f);
+    void destroy();
 
-    bool wasCloseButtonClicked() override;
+    bool wasCloseButtonClicked();
 
     int getWidth();
     int getHeight();
