@@ -4,9 +4,9 @@
 #include <glm/mat4x4.hpp>
 
 
-#include "Core/GameLoop.hpp"
-#include "Core/Window.hpp"
-#include "Core/Shader.hpp"
+#include "engine/core/GameLoop.hpp"
+#include "engine/core/Window.hpp"
+#include "engine/core/Shader.hpp"
 
 class NanoGame : public Engine::Core::GameLoop {
 private:

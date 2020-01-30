@@ -1,12 +1,11 @@
 list(APPEND SRC
         main.cxx
-        Core/Window.cpp
-        Core/Window.hpp
-        Core/Shader.cpp
-        Core/Shader.hpp
-        Core/Interface/ICoreWindow.hpp
-        Core/GameLoop.cpp
-        Core/GameLoop.hpp
+        engine/core/Window.cpp
+        engine/core/Window.hpp
+        engine/core/Shader.cpp
+        engine/core/Shader.hpp
+        engine/core/GameLoop.cpp
+        engine/core/GameLoop.hpp
 
         Game/NanoGame.cpp
         Game/NanoGame.hpp)
